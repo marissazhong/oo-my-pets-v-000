@@ -48,11 +48,11 @@ class Owner
   end
 
   def sell_pets
-    @pets.values.map {|pet| pet.mood = "nervous"}
+    @pets.values.each {|pet| pet.mood = "nervous"}
   end
 
   def list_pets
-    @pets.values.map {|pet| puts pet.name}
+    @pets.values.each {|pet| puts pet.name}
   end
 
   def self.count
