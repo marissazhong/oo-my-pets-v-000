@@ -26,4 +26,10 @@ class Owner
     self.all.clear
     count
   end
+
+  def self.reset_all
+    count = self.all.length
+    self.all.clear
+    count
+  end
 end
