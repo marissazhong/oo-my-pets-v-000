@@ -20,19 +20,23 @@ class Owner
     "I am a human."
   end
 
-  def buy_cat(name)
-    new_cat = Cat.new(name)
-    @pets[:cats] << new_cat
-  end
-
   def buy_dog(name)
     new_dog = Dog.new(name)
     @pets[:dogs] << new_dog
   end
 
+  def buy_cat(name)
+    new_cat = Cat.new(name)
+    @pets[:cats] << new_cat
+  end
+
   def buy_fish(name)
     new_fish = Fat.new(name)
     @pets[:fishes] << new_fish
+  end
+
+  def walk_dogs
+    @pets[:dogs].map {|dog| dog.mood = "happy"}
   end
 
   def self.count
