@@ -25,7 +25,7 @@ class Owner
     @pets[cat] << new_cat
   end
 
-  def reset_all
+  def self.reset_all
     count = self.all.length
     self.all.clear
   end
