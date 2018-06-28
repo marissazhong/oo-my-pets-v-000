@@ -21,7 +21,7 @@ class Owner
 
   def buy_cat(name)
     new_cat = Cat.new(name)
-    @pets.cat << new_cat
+    @pets[cat] << new_cat
   end
 
   def reset_all
