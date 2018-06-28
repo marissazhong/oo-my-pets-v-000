@@ -47,6 +47,10 @@ class Owner
     @pets[:fishes].map {|fish| dog.mood = "happy"}
   end
 
+  def sell_pets
+    @pets.each.map {|pet| pet.mood = "nervous"}
+  end
+
   def self.count
     count = self.all.length
     self.all.clear
