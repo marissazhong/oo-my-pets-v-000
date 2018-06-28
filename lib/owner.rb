@@ -28,5 +28,6 @@ class Owner
   def self.count
     count = self.all.length
     self.all.clear
+    count
   end
 end
