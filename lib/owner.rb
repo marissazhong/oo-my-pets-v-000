@@ -39,6 +39,14 @@ class Owner
     @pets[:dogs].map {|dog| dog.mood = "happy"}
   end
 
+  def play_with_cats
+    @pets[:cats].map {|cat| cat.mood = "happy"}
+  end
+
+  def feed_fish
+    @pets[:fishes].map {|fish| dog.mood = "happy"}
+  end
+
   def self.count
     count = self.all.length
     self.all.clear
