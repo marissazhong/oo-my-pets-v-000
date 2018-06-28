@@ -52,7 +52,7 @@ class Owner
   end
 
   def list_pets
-    @pets.values.each {|pet| puts pet}
+    puts @pets.values
   end
 
   def self.count
