@@ -11,8 +11,13 @@ class Owner
   def initialize
     @pets = {fishes: [], cats: [], dogs: []}
   end
+
   def buy_cat(name)
     new_cat = Cat.new(name)
     @pets.cat << new_cat
   end
+
+  def reset_all
+    count = self.all.length
+    self.all.clear
 end
