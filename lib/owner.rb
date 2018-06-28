@@ -49,7 +49,7 @@ class Owner
 
   def sell_pets
     @pets.each {|key, value| value.each {|pet| pet.mood = "nervous"}}
-    @pets = @pets.each {|key, value| value = []}
+    @pets = @pets.each {|key, value| @pets[key] = []}
     puts @pets
   end
 
