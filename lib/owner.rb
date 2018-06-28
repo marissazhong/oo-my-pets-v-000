@@ -12,8 +12,8 @@ class Owner
     @@all << self
   end
 
-  def species(species)
-    @species = "human"
+  def species(species = "human")
+    @species = species
   end
 
   def say_species
