@@ -25,6 +25,16 @@ class Owner
     @pets[:cats] << new_cat
   end
 
+  def buy_dog(name)
+    new_dog = Dog.new(name)
+    @pets[:dogs] << new_dog
+  end
+
+  def buy_fish(name)
+    new_fish = Fat.new(name)
+    @pets[:fishes] << new_fish
+  end
+
   def self.count
     count = self.all.length
     self.all.clear
