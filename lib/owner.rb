@@ -12,6 +12,10 @@ class Owner
     @@all << self
   end
 
+  def species(species)
+    @species = "human"
+  end
+
   def say_species
     "I am a human."
   end
