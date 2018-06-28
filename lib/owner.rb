@@ -7,6 +7,10 @@ class Owner
     @@all
   end
 
+  def save
+    @@all << self
+  end
+
   def initialize(name)
     @pets = {fishes: [], cats: [], dogs: []}
     @@self << self
