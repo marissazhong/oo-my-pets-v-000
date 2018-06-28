@@ -12,7 +12,7 @@ class Owner
     self.all << self
   end
 
-  def species(species)
+  def species
     @species = species
   end
 
