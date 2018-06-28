@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :pets
+  attr_accessor :pets, :name
   attr_reader :species
   @@all = []
 
@@ -17,10 +17,6 @@ class Owner
 
   def say_species
 
-  end
-
-  def name
-    @name
   end
 
   def buy_cat(name)
