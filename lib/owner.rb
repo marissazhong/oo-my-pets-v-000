@@ -12,6 +12,9 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
+  def species(species)
+    @species = species
+
   def buy_cat(name)
     new_cat = Cat.new(name)
     @pets.cat << new_cat
