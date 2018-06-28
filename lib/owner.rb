@@ -27,4 +27,5 @@ class Owner
   def reset_all
     count = self.all.length
     self.all.clear
+  end
 end
