@@ -55,7 +55,7 @@ class Owner
   def list_pets
     number_of_pets = []
     @pets.values.each {|type| number_of_pets << type.length}
-    
+    "I have #{number_of_pets[0]} fish, #{number_of_pets[2]} dog(s), and #{number_of_pets[1]}."
   end
 
   def self.count
