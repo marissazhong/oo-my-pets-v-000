@@ -7,15 +7,16 @@ class Owner
     @@all
   end
 
-
-
-  def initialize
+  def initialize(name)
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
   def species(species)
     @species = species
   end
+
+  def say_species
+      
 
   def buy_cat(name)
     new_cat = Cat.new(name)
